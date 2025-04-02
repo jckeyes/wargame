@@ -1,14 +1,11 @@
 build:
 	@mkdir -p bin
-	@echo "Building wargame..."
 	@go build -o bin/wargame
 
 clean:
-	@echo "Cleaning up..."
 	@rm -f bin/wargame
 
 run: build
-	@echo "Running wargame..."
 	@./bin/wargame
 
 all: build
